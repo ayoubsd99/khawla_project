@@ -1,0 +1,42 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Latest compiled and minified CSS -->
+    {% include 'scripts/links.html' %}
+    <title>Document</title>
+</head>
+
+<body>
+  
+            {% include 'landing/base/navbar.html' %}
+       
+
+
+        <main >
+          {% block content %}
+                
+          {% endblock  %}
+ 
+        </main>
+     
+        <div>
+          {% include 'landing/base/footer.html' %}
+
+        </div>
+
+
+
+        
+        {% block javascript %}
+          
+        {% endblock  %}
+          
+{% include 'scripts/messages.html' %}
+{% include 'scripts/scripts.html' %}
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #3C3B3F;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            text-align: center;
+        }
+        img{
+            border-radius: 50%;
+            width: 70px;
+        }
+       input[type=submit]{
+           padding: 10px 20px;
+           background-color: #21658d;
+           color: #fff;
+           border: none;
+           border-radius: 20px;
+       }
+       .text{
+           
+           height: 50px;
+       }
+      /* .login{
+           background: #6D6027;  
+            background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  
+            background: linear-gradient(to right, #D3CBB8, #6D6027); 
+       }*/
+    </style>
+</head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!------ Include the above in your HEAD tag ---------->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  
+<body>
+    <div class="">
+        <h3 class="text-center text-white pt-5"></h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center login">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12 ">
+                        <form id="login-form" class="form" action="" method="post">{% csrf_token %}
+                            <h3 class="text-center ">
+                            <img src="https://res.cloudinary.com/dgjvthpnh/image/upload/v1613159753/vriab4wdgrngyxcx5rn8.jpg" alt="">
+                            <br>
+                            Sign In
+                            </h3>
+                            <div class="input-field col s12">
+                                <label for="username" class="">Username:</label><br>
+                                <input type="text"
+                              
+                                name="username" id="username" class="validate">
+                            </div>
+                           
+                            <div class="input-field col s12">
+                                <label for="password" class="">Password:</label><br>
+                                <input type="password" name="password" id="password" class="validate">
+                            </div>
+                            <div style="text-align: center;">
+                                <a href="{% url 'home' %}">back to home page</a><br>
+                                <input class="btn1" type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                            </div>       
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+</body>
+
+</html>

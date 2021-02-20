@@ -1,0 +1,45 @@
+
+{% extends 'landing/base/base.html' %}
+
+{% block content %}
+ 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid home" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-12">
+          <div class="row">
+            <div class="col-xl-8">
+              <h1 class="welcome">Welcome in our site</h1>
+              <p class="homedesc">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.
+                 Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 150</p>
+              <a href="{% url 'catalog' %}" class="btn btn1">watch our catalogue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+{% endblock  %}
+{% block javascript %}
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+         <script>
+
+           const  fetchitems=()=>{
+              $.ajax({
+                  'type':'GET',
+                  'url':'http://127.0.0.1:8000/api/items_list'
+      
+              }).then( res=>{
+                  const  data=JSON.parse(res)
+                  localStorage.setItem('items',JSON.stringify(data.items))
+              })
+          }
+          $(document).ready(()=>{
+            localStorage.removeItem('items')
+            fetchitems()
+          })
+         </script> 
+{% endblock  %}

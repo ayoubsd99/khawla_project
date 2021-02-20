@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+body {
+  height: 2000px;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: #007bff;
+  font-size: 30px;
+}
+
+/*  navbar style */
+.main{
+    background-color: #a15765;
+}
+
+.logo{
+    font-size: 60px;
+    font-family: 'Big Shoulders Display', cursive;
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+.login{
+    border: none;border-radius: 20px;text-align: center;
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.nav ul .links{
+ color:rgb(119, 69, 69);
+ font-size: 20px;
+ font-weight: 600;
+ margin-right: 30px;
+
+}
+.links:hover{
+ color:rgb(107, 18, 25);
+ font-size: 30px;
+ text-decoration: none;
+ transition: font-size 1s;
+}
+
+
+/* home style  */
+
+.home{
+    padding: 150px 50px;
+    background: url('https://res.cloudinary.com/dgjvthpnh/image/upload/v1612805774/gfpvsxmwundjziilkkqa.jpg');
+  background-position: center;
+  background-size: cover;
+    height: 100%;
+}
+
+.home .btn1{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    padding:2px 10px ;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.home .btn1:hover{
+    color: blanchedalmond;
+    
+
+}
+
+
+.home .welcome{
+    font-size: 50px;
+    font-weight: 600;
+    background: #6D6027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D3CBB8, #6D6027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+.home .homedesc{
+    font-size: 25px;
+    font-weight: 700;
+    color: #D3CBB8;
+
+}
+
+
+
+/* catalogue style */
+.catalog{
+    background:url('https://res.cloudinary.com/dgjvthpnh/image/upload/v1612806512/uce1v0whnxwtd37nbpbg.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.img-catalog:hover{
+ width: 200px;
+}
+
+
+.catfilter{
+    margin:0 -16px ;display: flex; justify-content: space-around;
+}
+
+.catfilter .links{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: burlywood;
+    padding: 7px 20px;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+
+
+}
+#catalog{
+line-height: 20px;
+}
+.itemcatalogue{
+    width:200px;
+    height: max-content;
+    margin:20px 20px 50px 60px;
+    border: 2px solid #a15765;
+
+
+}
+.btn2{
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px 20px;
+}
+
+
+
+.contact{
+    background: url('https://res.cloudinary.com/dgjvthpnh/image/upload/v1613086992/ccjo0zuobtfvlplawz6q.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* footer */
+
+.media li{
+    color: #D3CBB8;
+}

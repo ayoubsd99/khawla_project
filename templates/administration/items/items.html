@@ -1,0 +1,53 @@
+
+{% extends 'administration/base/index.html' %}
+
+{% block style %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+{% endblock  %}
+    
+{% block content %}
+
+       
+        <a  class="btn btn-info" href="{% url 'createitem' %}">New Poste +
+         
+        </a>
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>title</th>
+            <th>created_at</th>
+            <th>Delete</th>
+            <th>Update</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        
+        {% for item in items  %}
+        <tr style="cursor: pointer;">
+            <td style=" text-align: center;"><img style="width: 100px; border: 1px solid black; border-radius: 5px;" src="{{item.get_miniature}}" alt="hhhhhh"></td>
+            <td style=" text-align: center;">{{item.title}}</td>
+            <td style=" text-align: center;">{{item.created_at.date}}</td>
+            <td style=" text-align: center;"><a  class="btn btn-danger" href="{% url 'deleteitem' item.reference%}">delete</a></td>
+            <td style=" text-align: center;"><a  class="btn btn-primary" href="{% url 'updateitem' item.reference %}">update</a></td>
+        </tr>
+        {% endfor %}
+            
+    </tbody>
+  
+</table>
+    
+{% endblock  %}
+
+{% block javascript %}
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script>
+          $(document).ready(function() {
+        $('#example').DataTable();
+} );
+      </script>
+{% endblock  %}
